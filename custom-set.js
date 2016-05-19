@@ -39,7 +39,12 @@ CustomSet.prototype.difference = function(input) {
 }
 
 CustomSet.prototype.disjoint = function(input) {
-
+  // var newArray = this.difference(input)
+  //
+  // if (this.eql(newArray)) {
+  //   return true
+  // }
+  // return false
 }
 
 CustomSet.prototype.empty = function() {
