@@ -1,5 +1,5 @@
 function CustomSet(array){
-  this.array = array
+  this.array = array || []
 
 }
 
@@ -42,8 +42,9 @@ CustomSet.prototype.disjoint = function(input) {
 
 }
 
-CustomSet.prototype.empty = function(input) {
-
+CustomSet.prototype.empty = function() {
+  this.array = []
+  return this;
 }
 
 

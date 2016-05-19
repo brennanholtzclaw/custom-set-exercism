@@ -32,7 +32,7 @@ describe('CustomSet', function() {
     expect(actual2.eql(expected2)).toBe(true);
   });
 
-  it('can test disjoint', function() {
+  xit('can test disjoint', function() {
     // this is a bad test - does not describe function of the... function
     var actual = new CustomSet([1, 2]).disjoint(new CustomSet([3, 4]));
     expect(actual).toBe(true);
@@ -42,7 +42,7 @@ describe('CustomSet', function() {
     expect(actual3).toBe(true);
   });
 
-  xit('can be emptied', function() {
+  it('can be emptied', function() {
     var actual = new CustomSet([1, 2]).empty();
     var expected = new CustomSet();
     expect(actual.eql(expected)).toBe(true);
